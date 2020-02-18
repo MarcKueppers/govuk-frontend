@@ -1,16 +1,16 @@
 # Test your GOV.UK Frontend contribution
 
-Before you submit your contribution, you should:
+Before you submit your contribution to GOV.UK Frontend, you should:
 
 - fix any CSS or JavaScript style errors
 - check your changes look right and behave correctly
-- test in supported browsers and assistive technology
-- run the automated tests, and update the tests if they fail
-- add new tests if you need to
+- test your changes in supported browsers and assistive technology
+- run the automated tests
+- update the tests or add new tests if you need to
 
-Let us know in your pull request or [contact us](https://design-system.service.gov.uk/#support) if either:
+Let us know in your pull request or [contact us](https://design-system.service.gov.uk/#support) if:
 
-- you can’t do some of the checks or tests
+- you cannot do some of the checks or tests
 - your contribution might affect other parts of GOV.UK Frontend
 
 ## 1. Fix any CSS or JavaScript style errors
@@ -60,8 +60,6 @@ You should write new tests if you’ve created a new component, or changed the w
 - changing or adding to the component's Nunjucks macro
 - creating or updating a Sass mixin or function
 
-If you’re not sure how to write new tests, ask a developer on your team to help you or [contact us](https://design-system.service.gov.uk/#support).
-
 ### If you created a component
 
 Create the following files in the `src/govuk/components` folder:
@@ -92,7 +90,7 @@ For example, if you updated a mixin in `src/govuk/helpers/_colour.scss`, update 
 
 If your component uses another component, one of the [Jest snapshot tests](https://jestjs.io/docs/en/snapshot-testing) may fail. Snapshot tests compare a component's current markup with a previously stored version.
 
-If a snapshot test fails, do the following.
+If a snapshot test fails, follow these steps.
 
 1. Check that the component's new markup is correct.
 2. Run `npm test -- -u src/govuk/components/<COMPONENT>` to update the snapshot test with the new markup.
